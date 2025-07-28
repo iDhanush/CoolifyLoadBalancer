@@ -55,5 +55,5 @@ async def download_speed(request: Request):
     )
 
 
-# time.sleep(serial * 100)
+time.sleep(serial * 100)
 uvicorn.run(app, host="0.0.0.0", port=port)
