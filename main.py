@@ -1,6 +1,6 @@
-from fastapi import FastAPI
 import sys
 import uvicorn
+from fastapi import FastAPI
 
 port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
 app = FastAPI()
