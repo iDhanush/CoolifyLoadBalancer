@@ -6,7 +6,7 @@ services:
     build: .
     ports:
       - "9000:9000"
-    command: [ "python", "main.py", "9000" ]
+    command: [ "python", "main.py", "9000", "0" ]
     restart: always
 
 
@@ -15,7 +15,7 @@ services:
     build: .
     ports:
       - "9001:9001"
-    command: [ "python", "main.py", "9001" ]
+    command: [ "python", "main.py", "9001", "1" ]
     restart: always
 
 
@@ -24,7 +24,7 @@ services:
     build: .
     ports:
       - "9002:9002"
-    command: [ "python", "main.py", "9002" ]
+    command: [ "python", "main.py", "9002", "2" ]
     restart: always
 
 
@@ -33,7 +33,7 @@ services:
     build: .
     ports:
       - "9003:9003"
-    command: [ "python", "main.py", "9003" ]
+    command: [ "python", "main.py", "9003", "3" ]
     restart: always
 
 
