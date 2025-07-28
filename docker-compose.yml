@@ -38,6 +38,7 @@ services:
 
 
   load_balancer:
+    container_name: load_balancer
     build:
       context: .
       dockerfile: Dockerfile.nginx
