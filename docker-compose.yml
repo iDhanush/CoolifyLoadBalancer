@@ -11,3 +11,10 @@ services:
     ports:
       - "9001:9001"
     command: [ "python", "main.py", "9001" ]
+
+  loadbalancer:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    ports:
+      - "80:80"
