@@ -15,12 +15,12 @@ services:
   fastapi_app3:
     build: .
     ports:
-      - "9001:9002"
+      - "9002:9002"
     command: [ "python", "main.py", "9002" ]
   fastapi_app4:
       build: .
       ports:
-        - "9001:9003"
+        - "9003:9003"
       command: [ "python", "main.py", "9003" ]
 
   load_balancer:
