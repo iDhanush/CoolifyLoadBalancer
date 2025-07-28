@@ -9,7 +9,7 @@ services:
     command: [ "python", "main.py", "9000" ]
     restart: on-failure
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9000/docs"]
+      test: ["CMD", "curl", "-f", "http://localhost:9000"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -24,7 +24,7 @@ services:
     command: [ "python", "main.py", "9001" ]
     restart: on-failure
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9001/docs"]
+      test: ["CMD", "curl", "-f", "http://localhost:9001"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -39,7 +39,7 @@ services:
     command: [ "python", "main.py", "9002" ]
     restart: on-failure
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9002/docs"]
+      test: ["CMD", "curl", "-f", "http://localhost:9002"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -54,7 +54,7 @@ services:
     command: [ "python", "main.py", "9003" ]
     restart: on-failure
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9003/docs"]
+      test: ["CMD", "curl", "-f", "http://localhost:9003"]
       interval: 30s
       timeout: 10s
       retries: 3
