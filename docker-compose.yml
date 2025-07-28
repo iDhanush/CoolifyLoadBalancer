@@ -5,7 +5,8 @@ services:
     build: .
     ports:
       - "9000:9000"
-    command: ["python", "main.py", "9000"]
+    command: [ "python", "main.py", "9000" ]
+
   fastapi_app2:
     build: .
     ports:
@@ -18,3 +19,6 @@ services:
       dockerfile: Dockerfile.nginx
     ports:
       - "8999:8999"
+    depends_on:
+      - fastapi_app1
+      - fastapi_app2
