@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": f"Hello, World! {port}"}
+    return {"message": f"Hello, World! from port: {port}"}
 
 
-uvicorn.run("main:app", host="0.0.0.0", port=port)
+uvicorn.run(app, host="0.0.0.0", port=port)
