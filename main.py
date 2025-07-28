@@ -42,7 +42,7 @@ async def download_speed(request: Request):
 
     headers = {
         "Content-Type": "application/octet-stream",
-        "Content-Disposition": f"attachment; filename=test_4GB_{port}.dat",
+        "Content-Disposition": f"attachment; filename=test_4GB.dat",
         "Accept-Ranges": "bytes",
         "Content-Range": f"bytes {start}-{end}/{total_size}",
         "Content-Length": str(content_length)
